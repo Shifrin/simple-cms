@@ -1,0 +1,267 @@
+html,
+body {
+    height: 100%;
+}
+.login-box,
+.register-box {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 9% 0 60px;
+}
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* Ajax spinner */
+body > .overlay-wrapper > .overlay {
+    display: none;
+    z-index: 1055;
+}
+body.loading > .overlay-wrapper > .overlay {
+    display: block;
+}
+
+/* New Helper Classes */
+.small-text {
+    font-size: 12px;
+}
+.bg-info {
+    padding: 10px;
+}
+
+/* Navbar Brand */
+.layout-top-nav .navbar >.container .navbar-brand,
+.layout-top-nav .navbar >.container-fluid .navbar-brand {
+    margin-left: 0; /* Fixing for public layout */
+}
+
+/* Content */
+.login-page > .content-wrapper {
+    background-color: #fff;
+}
+
+/* Login | Register Pages */
+.login-page {
+    background-color: #fff;
+}
+.login-page .login-box-body {
+    -webkit-box-shadow: 0 0px 2px #cecece;
+    -moz-box-shadow: 0 0px 2px #cecece;
+    box-shadow: 0 0px 2px #cecece;
+}
+.login-page .footer {
+    background-color: #fff;
+}
+
+/* noty */
+#noty_topCenter_layout_container {
+    top: 60px !important;
+}
+.login-page #noty_topCenter_layout_container {
+    top: 30px !important;
+}
+#noty_topCenter_layout_container > li {
+    height: auto !important;
+    min-height: 36px !important;
+}
+#noty_bottomRight_layout_container > li {
+    height: auto !important;
+    min-height: 46px !important;
+}
+#noty_bottomRight_layout_container > li .noty_message {
+    line-height: 26px !important;
+}
+
+/* Grid View */
+.grid-view > .overlay {
+    display: none;
+}
+.grid-view .action-column {
+    width: 95px;
+}
+.grid-view .description-column {
+    width: 400px;
+}
+
+/* Pace */
+.pace .pace-progress {
+    background: rgba(255, 255, 255, 0.6);
+}
+.pace .pace-activity {
+    border-top-color: rgba(255, 255, 255, 0.6);
+    border-left-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Pagination */
+.pagination {
+    margin: 0;
+}
+
+/* Nav Tabs */
+.nav-tabs {
+    margin-bottom: 10px;
+}
+
+/* Custom Buttons */
+.user-profile .btn-delete {
+    background-color: transparent;
+    border: none;
+    color: #dd4b39;
+    font-size: 22px;
+}
+.user-profile .btn-delete:hover,
+.user-profile .btn-delete:focus {
+    color: #d73925;
+    background-color: transparent;
+    border: none;
+}
+
+/* Modal */
+.modal-content h1:first-child,
+.modal-content h2:first-child,
+.modal-content h3:first-child,
+.modal-content h3:first-child {
+    margin-top: 0;
+}
+
+/* Broken Image Style */
+img {
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+img:after {
+    content: "\f03e" " " "Image Not Found!";
+    font-size: 16px;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* Bootstrap Date/Time picker */
+.bootstrap-datetimepicker-widget {
+    z-index: 2001;
+}
+
+/* Select2 Widget */
+.select2-container {
+    width: 100% !important;
+}
+
+/* Forms & Inputs */
+.input-group .input-group-addon {
+    font-size: 18px;
+}
+.input-buttons {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.input-buttons > a {
+    padding: 0 10px;
+}
+.input-buttons > a:first-child {
+    padding-left: 0;
+}
+.search-form {
+    margin-bottom: 10px;
+}
+
+/* Editor */
+.trumbowyg-box,
+.trumbowyg-editor {
+    width: 100%;
+    margin: 0;
+}
+
+/* Select2 */
+.select2-container--krajee .select2-selection--single .select2-selection__rendered {
+    line-height: 28px;
+}
+
+/* File Manager Modal */
+#filemanager-modal {
+    z-index: 100001;
+}

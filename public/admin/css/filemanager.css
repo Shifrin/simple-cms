@@ -1,0 +1,85 @@
+.storage-controls {
+    margin-bottom: 20px;
+}
+.storage-controls .input-group > .form-control,
+.storage-controls .input-group > .input-group-addon {
+    background: transparent;
+    border-color: transparent;
+    font-size: 18px;
+}
+.storage-controls .input-group > .input-group-addon {
+    padding-left: 0;
+    font-size: 23px;
+    cursor: pointer;
+}
+.file-manager > .files-count > span {
+    font-size: 24px;
+}
+.file-manager > .file-breadcrumb {
+    background-color: transparent;
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+.file-manager > .file-breadcrumb > li {
+    font-size: 22px;
+    color: #bbbbbb;
+}
+.file-manager > .file-breadcrumb > li+li:before {
+    padding: 0 10px;
+}
+.file-manager > .no-files {
+    padding: 80px 0;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    color: #dddddd;
+}
+.file-manager > .files > .mix {
+    display: none;
+}
+@media (max-width: 767px) {
+    .file-manager > .files > .mix {
+        margin-bottom: 30px;
+    }
+}
+.file-manager > .files > .mix > .file-wrap {
+    display: block;
+    border: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.file-manager > .files > .mix.folder > .file-wrap {
+    cursor: pointer;
+}
+.file-manager > .files > .mix > .file-wrap > .file-icon {
+    font-size: 100px;
+    text-align: center;
+    background-color: #fff;
+    color: #3c8dbc;
+}
+.file-manager > .files > .mix > .file-wrap > .file-icon > img {
+    max-height: 142px;
+}
+.file-manager > .files > .mix > .file-wrap > .file-details {
+    text-align: center;
+    padding: 10px;
+    background-color: #3c8dbc;
+    color: #fff;
+}
+.file-manager > .files > .mix > .file-wrap > .file-details > span {
+    display: block;
+}
+.file-manager > .files > .mix > .file-wrap > .file-details > .name {
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#filemanager-modal {
+    z-index: 105000;
+}
+#filemanager-modal .modal-body {
+    padding: 20px;
+}
